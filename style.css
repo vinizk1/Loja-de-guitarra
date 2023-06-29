@@ -1,64 +1,98 @@
-#banner {
-	width:35%;
-	display: block;
-	margin: auto;
+header {
+	background: rgb(131,58,180);
+background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+	padding: 20px 0;
 }
 
-body{
-	background: rgb(0,0,0);
-	background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(189,25,25,1) 42%, rgba(140,22,22,1) 100%);
+main{
+	background: rgb(253,29,29);
+background: linear-gradient(90deg, rgba(253,29,29,1) 15%, rgba(214,235,34,1) 52%, rgba(69,252,75,1) 100%);
 }
 
-.principal{
-	background: #000000;
-	padding: 30px;
-	color:antiquewhite;
+.caixa {
+	position: relative;
+	width: 940px;
+	margin: 0 auto;
 }
 
-.titulo-principal {
-	padding-left: 20px;
-	text-align: center;
-	color: #FF0000;
+nav {
+	position: absolute;
+	top: 110px;
+	right: 0;
 }
 
-.titulo-centralizado {
-	text-align: center
+nav li {
+	display: inline;
+	margin: 0 0 0 15px;
 }
 
-p {
-	text-align: center;
+nav a {
+	text-transform: uppercase;
+	color: #000000;
+	font-weight: bold;
+	font-size: 22px;
+	text-decoration: none;
 }
 
-#missao {
-	font-size: 20px
-	color: white;
+nav a:hover {
+	color: #C78C19;
+	text-decoration: underline;
 }
 
-em strong {
-	color: #FF0000;
+.produtos {
+	width: 940px;
+	margin: 0 auto;
+	padding: 50px 0;
 }
 
-.itens {
-	font-style: italic
-}
-
-.beneficios {
-	padding: 20px;
-}
-
-ul {
+.produtos li {
 	display: inline-block;
+	text-align: center;
+	width: 30%;
 	vertical-align: top;
-	width: 20%;
-	margin-right: 15%;
+	margin: 0 1.5%;
+	padding: 30px 20px;
+	box-sizing: border-box;
+	border: 2px solid #000000;
+	border-radius: 10px;
 }
 
-.imagembeneficios {
-	width: 25%;
-	margin-left: auto;
+.produtos li:hover {
+	border-color: #C78C19;
 }
 
-.imagem {
-	width: 250px;
-	height: 250px;
+.produtos li:active {
+	border-color: #088C19;	
+}
+
+.produtos li:hover h2 {
+	font-size: 34px;
+}
+
+.produtos h2 {
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.produto-descricao {
+	font-size: 18px;
+}
+
+.produto-preco {
+	font-size: 22px;
+	font-weight: bold;
+	margin-top: 10px;
+}
+
+footer {
+	background: rgb(238,174,202);
+	background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+	text-align: center;
+	padding: 40px 0;
+}
+
+.copyright {
+	color: #FFFFFF;
+	font-size: 13px;
+	margin: 20px 0 0;
 }
